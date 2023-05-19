@@ -17,8 +17,6 @@ Setup `west`, zmk-firmware, zephyr (minimal) according to docs.
 Copy `build/zephyr/zmk.uf2` to controller
 
 Also needs MouseKeys-support, currently from branch `mouse-3.2` of [urob](https://github.com/urob/zmk) ZMK repo:
-
-    echo 'CONFIG_ZMK_MOUSE=y' >> app/prj.conf
-
-Or via menuconfig...
+To configure, run `west build -t menuconfig` and select mouse option there,  or `echo 'CONFIG_ZMK_MOUSE=y' >> app/prj.conf`.
+Should be default with latest change to 'revxlp.conf'.
 
